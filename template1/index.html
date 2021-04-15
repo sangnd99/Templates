@@ -2,22 +2,294 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/reset.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Template 1</title>
-    link
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <!-- HEADER -->
+    <div class="parallel" id="parallel"></div>
+    <div class="header">
+      <a href="#" class="header__logo">
+        <img src="./asset/logo.png" alt="" class="header__logo-img" />
+      </a>
+      <ul class="header__menu">
+        <li class="header__menu-item">home</li>
+        <li class="header__menu-item">packages</li>
+        <li class="header__menu-item">shop</li>
+        <li class="header__menu-item">about us</li>
+        <li class="header__menu-item">pages</li>
+        <li class="header__menu-item">news</li>
+        <li class="header__menu-item">contact</li>
+      </ul>
+      <a href="#" class="btn btn-pupple">book now</a>
+    </div>
+    <div class="banner">
+      <div class="banner__title">
+        <h1 class="banner__title-text1">
+          Search your next
+          <span class="banner__title-text1-highlight">Holiday</span>
+        </h1>
+        <div class="highlight"></div>
+        <h6 class="banner__title-text2">check our best promotions</h6>
+      </div>
+      <div class="banner__search">
+        <p class="banner__search-text">Choose your Destination ...</p>
+        <a href="#" class="banner__search-button">
+          <i class="fa fa-search banner__search-button"></i>
+        </a>
+      </div>
+      <ul class="banner__type">
+        <li class="banner__type-item">
+          <a href="#" class="banner__type-link">
+            <img src="./asset/t-relax.png" alt="" class="banner__type-icon" />
+            <p class="banner__type-text">relax</p>
+          </a>
+        </li>
+        <li class="banner__type-item">
+          <a href="#" class="banner__type-link">
+            <img
+              src="./asset/t-cultural.png"
+              alt=""
+              class="banner__type-icon"
+            />
+            <p class="banner__type-text">cultural</p>
+          </a>
+        </li>
+        <li class="banner__type-item">
+          <a href="#" class="banner__type-link">
+            <img src="./asset/t-sport.png" alt="" class="banner__type-icon" />
+            <p class="banner__type-text">sport</p>
+          </a>
+        </li>
+        <li class="banner__type-item">
+          <a href="#" class="banner__type-link">
+            <img src="./asset/t-history.png" alt="" class="banner__type-icon" />
+            <p class="banner__type-text">history</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="proposal">
+      <div class="container">
+        <h6 class="proposal__title">our proposals</h6>
+        <h1 class="proposal__heading">
+          our <span class="proposal__heading-highlight">destinations</span>
+        </h1>
+        <ul class="proposal__list">
+          <li class="proposal__item">
+            <img
+              src="./asset/destination-9.jpg"
+              alt=""
+              class="proposal__item-bg"
+            />
+            <div class="proposal__item-gradient"></div>
+            <img src="./asset/arch.png" alt="" class="proposal__item-icon" />
+            <div class="proposal__item-info">
+              <h3 class="proposal__item-info-name">Europe</h3>
+              <p class="proposal__item-package">3 package</p>
+            </div>
+            <div class="proposal__item-overlay">
+              <div class="proposal__item-overlay-content">
+                <h6 class="proposal__item-overlay-content-heading">Packages</h6>
+                <ul class="proposal__item-overlay-content-list">
+                  <li class="proposal__item-overlay-content-item">
+                    <a href="#" class="proposal__item-overlay-content-link">
+                      Berlin
+                    </a>
+                  </li>
+                  <li class="proposal__item-overlay-content-item">
+                    <a href="#" class="proposal__item-overlay-content-link">
+                      Amsterdam
+                    </a>
+                  </li>
+                  <li class="proposal__item-overlay-content-item">
+                    <a href="#" class="proposal__item-overlay-content-link">
+                      Tuscany
+                    </a>
+                  </li>
+                </ul>
+                <a href="#" class="proposal__item-overlay-content-btn"
+                  >view destination</a
+                >
+              </div>
+            </div>
+          </li>
+          <li class="proposal__item">
+            <img
+              src="./asset/destination-5-720x720.jpg"
+              alt=""
+              class="proposal__item-bg"
+            />
+            <div class="proposal__item-gradient"></div>
+            <img src="./asset/arch.png" alt="" class="proposal__item-icon" />
+            <div class="proposal__item-info">
+              <h3 class="proposal__item-info-name">Thailandia</h3>
+              <p class="proposal__item-info-package">1 package</p>
+            </div>
+            <div class="proposal__item-overlay">
+              <div class="proposal__item-overlay-content">
+                <h6 class="proposal__item-overlay-content-heading">Packages</h6>
+                <ul class="proposal__item-overlay-content-list">
+                  <li class="proposal__item-overlay-content-item">
+                    <a href="#" class="proposal__item-overlay-content-link">
+                      Phuket
+                    </a>
+                  </li>
+                </ul>
+                <a href="#" class="proposal__item-overlay-content-btn"
+                  >view destination</a
+                >
+              </div>
+          </li>
+          <li class="proposal__item">
+            <img
+              src="./asset/destination-8.jpg"
+              alt=""
+              class="proposal__item-bg"
+            />
+            <div class="proposal__item-overlay"></div>
+            <img src="./asset/arch.png" alt="" class="proposal__item-icon" />
+            <div class="proposal__item-info">
+              <h3 class="proposal__item-info-name">Asia</h3>
+              <p class="proposal__item-info-package">2 package</p>
+            </div>
+            <div class="proposal__item-overlay">
+              <div class="proposal__item-overlay-content">
+                <h6 class="proposal__item-overlay-content-heading">Packages</h6>
+                <ul class="proposal__item-overlay-content-list">
+                  <li class="proposal__item-overlay-content-item">
+                    <a href="#" class="proposal__item-overlay-content-link">
+                      Hong Kong
+                    </a>
+                  </li>
+                  <li class="proposal__item-overlay-content-item">
+                    <a href="#" class="proposal__item-overlay-content-link">
+                      Phuket
+                    </a>
+                  </li>
+                </ul>
+                <a href="#" class="proposal__item-overlay-content-btn"
+                  >view destination</a
+                >
+              </div>
+          </li>
+          <li class="proposal__item">
+            <img
+              src="./asset/destination-9.jpg"
+              alt=""
+              class="proposal__item-bg"
+            />
+            <div class="proposal__item-gradient"></div>
+            <img src="./asset/arch.png" alt="" class="proposal__item-icon" />
+            <div class="proposal__item-info">
+              <h3 class="proposal__item-info-name">Europe</h3>
+              <p class="proposal__item-package">3 package</p>
+            </div>
+            <div class="proposal__item-overlay">
+              <div class="proposal__item-overlay-content">
+                <h6 class="proposal__item-overlay-content-heading">Packages</h6>
+                <ul class="proposal__item-overlay-content-list">
+                  <li class="proposal__item-overlay-content-item">
+                    <a href="#" class="proposal__item-overlay-content-link">
+                      Berlin
+                    </a>
+                  </li>
+                  <li class="proposal__item-overlay-content-item">
+                    <a href="#" class="proposal__item-overlay-content-link">
+                      Amsterdam
+                    </a>
+                  </li>
+                  <li class="proposal__item-overlay-content-item">
+                    <a href="#" class="proposal__item-overlay-content-link">
+                      Tuscany
+                    </a>
+                  </li>
+                </ul>
+                <a href="#" class="proposal__item-overlay-content-btn"
+                  >view destination</a
+                >
+              </div>
+            </div>
+          </li>
+          <li class="proposal__item">
+            <img
+              src="./asset/destination-5-720x720.jpg"
+              alt=""
+              class="proposal__item-bg"
+            />
+            <div class="proposal__item-gradient"></div>
+            <img src="./asset/arch.png" alt="" class="proposal__item-icon" />
+            <div class="proposal__item-info">
+              <h3 class="proposal__item-info-name">Thailandia</h3>
+              <p class="proposal__item-info-package">1 package</p>
+            </div>
+            <div class="proposal__item-overlay">
+              <div class="proposal__item-overlay-content">
+                <h6 class="proposal__item-overlay-content-heading">Packages</h6>
+                <ul class="proposal__item-overlay-content-list">
+                  <li class="proposal__item-overlay-content-item">
+                    <a href="#" class="proposal__item-overlay-content-link">
+                      Phuket
+                    </a>
+                  </li>
+                </ul>
+                <a href="#" class="proposal__item-overlay-content-btn"
+                  >view destination</a
+                >
+              </div>
+          </li>
+          <li class="proposal__item">
+            <img
+              src="./asset/destination-8.jpg"
+              alt=""
+              class="proposal__item-bg"
+            />
+            <div class="proposal__item-overlay"></div>
+            <img src="./asset/arch.png" alt="" class="proposal__item-icon" />
+            <div class="proposal__item-info">
+              <h3 class="proposal__item-info-name">Asia</h3>
+              <p class="proposal__item-info-package">2 package</p>
+            </div>
+            <div class="proposal__item-overlay">
+              <div class="proposal__item-overlay-content">
+                <h6 class="proposal__item-overlay-content-heading">Packages</h6>
+                <ul class="proposal__item-overlay-content-list">
+                  <li class="proposal__item-overlay-content-item">
+                    <a href="#" class="proposal__item-overlay-content-link">
+                      Hong Kong
+                    </a>
+                  </li>
+                  <li class="proposal__item-overlay-content-item">
+                    <a href="#" class="proposal__item-overlay-content-link">
+                      Phuket
+                    </a>
+                  </li>
+                </ul>
+                <a href="#" class="proposal__item-overlay-content-btn"
+                  >view destination</a
+                >
+              </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      var bg = document.querySelector("#parallel");
+      window.addEventListener("scroll", function () {
+        bg.style.backgroundPosition = `-200px ${-250 - this.scrollY * 0.5}px`;
+      });
+    </script>
   </body>
 </html>
