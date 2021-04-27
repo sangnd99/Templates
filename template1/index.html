@@ -34,6 +34,7 @@
       </ul>
       <a href="#" class="btn btn-pupple">book now</a>
     </div>
+
     <div class="banner">
       <div class="banner__title">
         <h1 class="banner__title-text1">
@@ -283,12 +284,24 @@
               </div>
           </li>
         </ul>
+
+      </div>
+    </div>
+
+    <div class="next" id="next">
+      <div class="next__container">
+        <h1 class="next__header">
+          Your <br> Next <span class="next__header-highlight">Holiday</span>
+        </h1>
+        <a href="#" class="btn next__button">view all packages</a>
       </div>
     </div>
     <script>
       var bg = document.querySelector("#parallel");
+      var nextBg = document.querySelector("#next");
       window.addEventListener("scroll", function () {
         bg.style.backgroundPosition = `-200px ${-250 - this.scrollY * 0.5}px`;
+        nextBg.style.backgroundPosition = `0 ${800 - this.scrollY * 0.5}px`;
       });
     </script>
   </body>

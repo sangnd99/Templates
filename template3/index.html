@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Template 3</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@8af0edd/css/all.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="grid nav-container">
+          <img src="./asset/logo-color.png" alt="" class="nav__icon" />
+          <ul class="nav__menu">
+            <li class="nav__menu-item menu-item-1">
+              <a href="#" class="nav__menu-link">home</a>
+            </li>
+            <li class="nav__menu-item menu-item-2">
+              <a href="#" class="nav__menu-link">packages</a>
+              <ul class="menu-2">
+                <li class="menu-2__item menu-2__item--hot">
+                  <a href="#">search 1</a>
+                </li>
+                <li class="menu-2__item">
+                  <a href="#">search 2</a>
+                </li>
+                <li class="menu-2__item menu-2__item--submenu">
+                  <a href="#">tour packages</a>
+                </li>
+                <li class="menu-2__item">
+                  <a href="#">destination</a>
+                </li>
+                <li class="menu-2__item">
+                  <a href="#">typology</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__menu-item menu-item-3">
+              <a href="#" class="nav__menu-link">shop</a>
+            </li>
+            <li class="nav__menu-item menu-item-4">
+              <a href="#" class="nav__menu-link">about us</a>
+            </li>
+            <li class="nav__menu-item" menu-item-5>
+              <a href="#" class="nav__menu-link">pages</a>
+            </li>
+            <li class="nav__menu-item" menu-item-6>
+              <a href="#" class="nav__menu-link">news</a>
+            </li>
+            <li class="nav__menu-item" menu-item-7>
+              <a href="#" class="nav__menu-link">contact</a>
+            </li>
+          </ul>
+          <a href="#" class="btn nav__btn">book now</a>
+        </div>
+      </nav>
+      <div class="carousel">
+        <div class="carousel__prev">
+          <i class="fal fa-chevron-left"></i>
+        </div>
+        <div class="carousel__next">
+          <i class="fal fa-chevron-right"></i>
+        </div>
+        <div class="carousel__content">
+          <img
+            class="carousel__content-img"
+            src="./asset/parallax-4.jpg"
+            alt=""
+          />
+          <img
+            class="carousel__content-img"
+            src="./asset/parallax-4-1.jpg"
+            alt=""
+          />
+          <img
+            class="carousel__content-img"
+            src="./asset/parallax-9.jpg"
+            alt=""
+          />
+        </div>
+        <ol class="carousel__indicators">
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </div>
+    </header>
+    <script>
+
+      <!-- --- Carousel --- -->
+      const carouselContent = document.querySelector(".carousel__content");
+      const carouselItems = document.querySelectorAll(".carousel__content img");
+      const carouselIndicators = document.querySelectorAll(
+        ".carousel__indicators li"
+      );
+      const nextBtn = document.querySelector(".carousel__next");
+      const prevBtn = document.querySelector(".carousel__prev");
+
+      let i = 0,
+        length = carouselItems.length;
+
+      nextBtn.addEventListener("click", function () {
+        next();
+      });
+
+      prevBtn.addEventListener("click", function () {
+        prev();
+      });
+
+
+      function next() {
+        if (i >= length - 1) {
+          i = 0;
+        } else {
+          i++;
+        }
+        carouselIndicators[i].className = "active";
+
+        <!-- Check if the previous element had class active or not -->
+        if (i - 1 < 0) {
+          carouselIndicators[length - 1].className = "";
+        } else {
+          carouselIndicators[i - 1].className = "";
+        }
+
+        carouselContent.style.transform = `translateX(${-100 * i}%)`;
+      }
+
+      function prev() {
+        if (i === 0) {
+          i = length - 1;
+        } else {
+          i--;
+        }
+        carouselIndicators[i].className = "active";
+
+        <!-- Check if the next element had class active or not -->
+        if (i + 1 > length - 1) {
+          carouselIndicators[0].className = "";
+        } else {
+          carouselIndicators[i + 1].className = "";
+        }
+
+        carouselContent.style.transform = `translateX(${-100 * i}%)`;
+      }
+
+      <!-- Make carousel run interval -->
+      setInterval(function () {
+        next();
+      }, 8000);
+    </script>
+  </body>
+</html>
